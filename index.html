@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Luxe Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>MOBILE LUXE</h1>
+  </div>
+  
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">Mobiles</a>
+    <a href="#">Accessories</a>
+    <div class="cart-status" onclick="toggleCart()">
+        CART <span class="cart-count" id="cart-count">0</span>
+    </div>
+  </div>
+
+  <main class="products">
+    <div class="product" data-name="Samsung Galaxy" data-price="299">
+      <img src="images/mobile no 1.jpg" alt="Mobile 1">
+      <h3>Samsung Galaxy</h3>
+      <p>$299</p>
+      <button class="add-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product" data-name="Galaxy S23" data-price="999">
+      <img src="images/mobile no 2.jpg" alt="Mobile 2">
+      <h3>Galaxy S23</h3>
+      <p>$999</p>
+      <button class="add-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product" data-name="Galaxy S24 Ultra" data-price="1249">
+      <img src="images/mobile no 3.jpg" alt="Mobile 3">
+      <h3>Galaxy S24 Ultra</h3>
+      <p>$1,249</p>
+      <button class="add-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product" data-name="Galaxy Z Flip" data-price="349">
+      <img src="images/mobile no 4.jpg" alt="Mobile 4">
+      <h3>Galaxy Z Flip</h3>
+      <p>$349</p>
+      <button class="add-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product" data-name="Samsung A10" data-price="349">
+      <img src="images/mobile no 5.jpg" alt="Mobile 5">
+      <h3>Samsung A10</h3>
+      <p>$349</p>
+      <button class="add-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product" data-name="Galaxy Z Fold 3" data-price="349">
+      <img src="images/mobile no 6.jpg" alt="Mobile 6">
+      <h3>Galaxy Z Fold 3</h3>
+      <p>$349</p>
+      <button class="add-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product" data-name="Z Fold 5" data-price="349">
+      <img src="images/mobile no 7.jpg" alt="Mobile 7">
+      <h3>Z Fold 5</h3>
+      <p>$349</p>
+      <button class="add-btn">ADD TO CART</button>
+    </div>
+
+    <div class="product" data-name="Samsung A51" data-price="349">
+      <img src="images/mobile no 8.jpg" alt="Mobile 8">
+      <h3>Samsung A51</h3>
+      <p>$349</p>
+      <button class="add-btn">ADD TO CART</button>
+    </div>
+  </main>
+
+  <div id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Selection</h2>
+      <span class="close-btn" onclick="toggleCart()">&times;</span>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="empty-msg">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Total:</span>
+        <span id="total-amount">$0</span>
+      </div>
+      <button class="checkout-btn" onclick="checkout()">PROCEED TO CHECKOUT</button>
+    </div>
+  </div>
+
+  <div id="toast">Added to collection!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
